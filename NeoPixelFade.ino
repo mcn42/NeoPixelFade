@@ -13,13 +13,13 @@ int PIN  = 12;
 
 Adafruit_NeoPixel pixels(NUMPIXELS, PIN, NEO_GRB + NEO_KHZ800);
 
-int red = 0;
-int green = 0;
-int blue = 0;
+int red;
+int green;
+int blue;
 
-int redStep = 1;
-int greenStep = 1;
-int blueStep = 1;
+int redStep;
+int greenStep;
+int blueStep;
 
 bool coinFlip(const int sides) {
   return random(sides) == 0;
